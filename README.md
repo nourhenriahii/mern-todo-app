@@ -2,6 +2,17 @@
 
 A simple full-stack to-do application built with the MERN stack (MongoDB, Express, React, Node.js). Users can add and delete tasks, which are stored in a MongoDB database.
 
+## Deployment
+
+The app is deployed on Microsoft Azure Web App Service:
+
+1. Build the React app with `npm run build`
+2. Push the code to GitHub
+3. Connect the repository in Azure **Deployment Center**
+4. Add `MONGO_URI` in Azure **Environment variables**
+
+Live demo: _add your Azure URL here_
+
 ## Features
 
 - Add a new task
@@ -85,13 +96,4 @@ Open `http://localhost:8007` in your browser.
 | `MONGO_URI` | MongoDB Atlas connection string          |
 | `PORT`      | Server port (set automatically on Azure) |
 
-## Deployment
 
-The app is deployed on Microsoft Azure Web App Service:
-
-1. Build the React app with `npm run build`
-2. Push the code to GitHub
-3. Connect the repository in Azure **Deployment Center**
-4. Add `MONGO_URI` in Azure **Environment variables**
-
-Live demo: _add your Azure URL here_
