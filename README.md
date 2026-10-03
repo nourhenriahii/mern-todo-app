@@ -2,16 +2,9 @@
 
 A simple full-stack to-do application built with the MERN stack (MongoDB, Express, React, Node.js). Users can add and delete tasks, which are stored in a MongoDB database.
 
-## Deployment
+**Live demo:** [https://mern-todo-app-1-1o9i.onrender.com](https://mern-todo-app-1-1o9i.onrender.com)
 
-The app is deployed on Microsoft Azure Web App Service:
-
-1. Build the React app with `npm run build`
-2. Push the code to GitHub
-3. Connect the repository in Azure **Deployment Center**
-4. Add `MONGO_URI` in Azure **Environment variables**
-
-Live demo: _add your Azure URL here_
+> The app is hosted on Render's free plan, so the first load may take up to 50 seconds while the server wakes up.
 
 ## Features
 
@@ -25,7 +18,7 @@ Live demo: _add your Azure URL here_
 - **Frontend:** React (Vite)
 - **Backend:** Node.js, Express
 - **Database:** MongoDB Atlas (Mongoose)
-- **Deployment:** Microsoft Azure Web App
+- **Deployment:** Render
 
 ## Project Structure
 
@@ -76,7 +69,7 @@ npm run build
 
 ```bash
 cd ../server
-node index.js
+npm start
 ```
 
 Open `http://localhost:8007` in your browser.
@@ -91,9 +84,20 @@ Open `http://localhost:8007` in your browser.
 
 ## Environment Variables
 
-| Variable    | Description                              |
-| ----------- | ---------------------------------------- |
-| `MONGO_URI` | MongoDB Atlas connection string          |
-| `PORT`      | Server port (set automatically on Azure) |
+| Variable    | Description                                  |
+| ----------- | -------------------------------------------- |
+| `MONGO_URI` | MongoDB Atlas connection string              |
+| `PORT`      | Server port (set automatically on Render)    |
 
+## Deployment
 
+The app is deployed on Render as a single Web Service (Express serves both the API and the built React app):
+
+- **Build Command:** `cd mern-client && npm install && npm run build && cd ../server && npm install`
+- **Start Command:** `cd server && npm start`
+- **Environment variable:** `MONGO_URI` (MongoDB Atlas connection string)
+- MongoDB Atlas **Network Access** allows connections from Render (`0.0.0.0/0`)
+
+## Author
+
+[nourhenriahii](https://github.com/nourhenriahii)
