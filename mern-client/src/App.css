@@ -1,0 +1,18 @@
+.btn1 {
+  width: 100px;
+  border: 3px solid pink;
+  background-color: white;
+  border-radius: 50px;
+  margin-left: 10px;
+  color: black;
+  background-color: rgb(204, 239, 194);
+  font-weight: 300px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+.btn1:hover {
+  background-color: rgb(80, 88, 78);
+  transition: 0.3s;
+  border-color: rgb(42, 42, 50);
+}
