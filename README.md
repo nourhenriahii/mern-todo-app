@@ -4,8 +4,6 @@ A simple full-stack to-do application built with the MERN stack (MongoDB, Expres
 
 **Live demo:** [https://mern-todo-app-1-1o9i.onrender.com](https://mern-todo-app-1-1o9i.onrender.com)
 
-> The app is hosted on Render's free plan, so the first load may take up to 50 seconds while the server wakes up.
-
 ## Features
 
 - Add a new task
